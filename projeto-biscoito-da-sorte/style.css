@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2.6rem;
+}
+
+.message-button {
+  background: none;
+  border: none;
+
+  width: 26rem;
+  cursor: pointer;
+}
+
+.message-button:hover {
+  animation: shake 0.6s;
+  animation-iteration-count: infinite;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  border-radius: .5rem;
+  background-color: #fff;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+  width: min(42.8rem, 90%);
+
+  margin: 0 auto;
+  margin-top: -12rem;
+
+  text-align: center;
+}
+
+.lucky {
+  font-size: 2.4rem;
+  font-weight: normal;
+  font-family: 'Dancing Script', cursive;
+
+  padding: 1rem;
+
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+  margin: 1.7rem 0 6rem 0;
+}
+
+.new-cookie-button {
+  padding: 1.6rem;
+  margin-top: 6rem;
+
+  border-radius: .4rem;
+  border:none;
+  background: #FF9500;
+
+  font-family: 'DM Sans', sans-serif;
+  color: white;
+  font-size: 1.5rem;
+
+  transition: background .2s;
+
+  cursor: pointer;
+}
+
+.new-cookie-button:hover {
+  background: #FFB800;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-10px, 0px);
+  }
+  20% {
+    transform: translate(10px, 10px);
+  }
+  30% {
+    transform: translate(-10px, -10px);
+  }
+  40% {
+    transform: translate(10px, 0px);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  60% {
+    transform: translate(-10px, 10px);
+  }
+  70% {
+    transform: translate(10px, -10px);
+  }
+  80% {
+    transform: translate(-10px, 0px);
+  }
+  90% {
+    transform: translate(0px, 10px);
+  }
+}
+
+@keyframes emerge {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
